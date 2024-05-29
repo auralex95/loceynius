@@ -6,40 +6,41 @@
     <title>Loceynius WIFI - Guest Access</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #ececec;
             margin: 0;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         .container {
-            text-align: center;
-            background: #fff;
-            padding: 40px 30px;
-            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px 40px;
+            border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
             max-width: 400px;
             width: 100%;
         }
         .logo {
-            max-width: 150px;
+            max-width: 120px;
             margin-bottom: 20px;
         }
         h2 {
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         p {
             color: #555;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         input[type="text"], input[type="email"] {
             display: block;
-            margin: 10px auto 20px;
+            margin: 10px auto;
             padding: 10px;
-            width: 90%;
+            width: 100%;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
@@ -52,6 +53,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            width: 100%;
         }
         input[type="submit"]:hover {
             background-color: #0056b3;
@@ -74,13 +76,13 @@
 <body>
     <div class="container">
         <img src="logo.png" alt="Loceynius" class="logo">
-        <h2>Bienvenue à Loceynius WIFI</h2>
-        <p>Veuillez entrer votre nom et votre adresse email pour accéder à notre WiFi invité.</p>
+        <h2>Loceynius WIFI</h2>
+        <p>Welcome to the Internet</p>
         <form id="loginForm" action="https://formspree.io/f/mnqeyead" method="POST">
             <input type="text" name="name" placeholder="Nom" required>
             <input type="email" name="email" placeholder="Email" required>
-            <div class="g-recaptcha" data-sitekey="VOTRE_SITE_KEY"></div>
-            <input type="submit" value="Se Connecter">
+            <div class="g-recaptcha" data-sitekey="6Lc6d-spAAAAAE40tWBaZuUBn5XY4U1P9aFg-XyN"></div>
+            <input type="submit" value="Login">
         </form>
         <div class="mentions">
             <p>En soumettant ce formulaire, vous acceptez notre <a href="#">politique de confidentialité</a> et nos <a href="#">mentions légales</a>.</p>
