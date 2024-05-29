@@ -12,8 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: url('background-image.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(135deg, #3b5998, #8b9dc3);
         }
         .container {
             background: rgba(255, 255, 255, 0.9);
@@ -54,6 +53,7 @@
             cursor: pointer;
             font-size: 16px;
             width: 100%;
+            margin-top: 20px;
         }
         input[type="submit"]:hover {
             background-color: #0056b3;
@@ -62,13 +62,6 @@
             font-size: 0.8em;
             margin-top: 20px;
             color: #777;
-        }
-        .mentions a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .mentions a:hover {
-            text-decoration: underline;
         }
     </style>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -85,8 +78,7 @@
             <input type="submit" value="Login">
         </form>
         <div class="mentions">
-            <p>En soumettant ce formulaire, vous acceptez notre <a href="#">politique de confidentialité</a> et nos <a href="#">mentions légales</a>.</p>
-            <p>Vous avez le droit de demander la suppression de vos informations à tout moment.</p>
+            <p>En soumettant ce formulaire, vous acceptez notre politique de confidentialité. Vous avez le droit de demander la suppression de vos informations à tout moment.</p>
         </div>
     </div>
 </body>
